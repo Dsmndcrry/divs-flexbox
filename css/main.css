@@ -108,12 +108,47 @@ body {
   height: 100%;
 }
 
-.wrapper {
+.flex-container{
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+}
+
+span{
+  color: yellow;
+}
+
+header h1{
+  display: flex;
+  font-size: 5rem;
+  color: #f0f0f0;
+  width: 100%;
+  flex-flow: row wrap;
+
+}
+
+ main {
+   display: flex;
+   justify-content: flex-start;
+   font-size: 1.9rem;
+   color: #f0f0f0;
+   width: 100%;
+   border-bottom-style: solid;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   margin-bottom: 3rem;
+}
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -121,22 +156,45 @@ body {
   line-height: 2.5rem;
   font-size: 1.5rem;
   background-color: #000;
-  height: 300px;
+  height: 20%;
   width: 30%;
-  padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 3rem;
 
 }
 
 .div-2 {
-  border-left: double;
-  border-right: double;
+  border-left: solid;
+  border-right: solid;
   border-width: thick;
+  color: #f0f0f0;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
 }
 
+footer {
+  display: flex;
+  color: #f0f0f0;
+  width:100%;
+  border-top-style: solid;
+  padding-top: 3rem;
+
+}
+
+footer img{
+  height: 1.8rem;
+}
+
+.linkedin-logo{
+  padding-left: 2rem;
+}
+
+.instagram-logo{
+  padding-left: 2rem;
+}
 
 
 /* ==========================================================================
